@@ -1,10 +1,10 @@
 /* SupaBase Einbindung */
 
 const SUPABASE_URL =
-    "https://gemtcvzzaaetckdivivu.supabase.co";
+    "https://dbxprmomuaodvvowqnkj.supabase.co";
 
 const SUPABASE_PUBLISHABLE_KEY =
-    "sb_publishable_GLlEsjJQZhdM5csHPeQvVg_78L0jkxk";
+    "sb_publishable_bOlEBBNgq-QQ-lwZhp1Log_YfpDwnyz";
 
 const supabaseClient =
     window.supabase.createClient(
