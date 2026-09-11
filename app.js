@@ -71,7 +71,7 @@ const taskGroups = [
         groupLabel: "Speed-Dating-Partner",
 
         groupIntro:
-            "In diesem Aufgabenblock sehen Sie jeweils zwei Teilnehmer eines" +
+            "In diesem Aufgabenblock sehen Sie jeweils zwei Teilnehmer eines " +
             "Speed-Dating-Events. Es handelt sich um heterosexuelle Paarungen. Sie erhalten eine Tabelle " +
             "mit den Angaben beider Dating-Partner. Die Teilnehmer wurden unter anderem darum gebeten, " +
             "ihr Gegenüber auf einer Skala von 1-10 zu bewerten, hinsichtlich Attraktivität, Intelligenz " +
@@ -286,7 +286,7 @@ const taskGroups = [
             "In diesem Aufgabenblock sehen Sie jeweils ein Foto einer Person. " +
             "Es handelt sich um Standbilder realer Personen, die in einem emotionalen Moment " +
             "aufgenommen wurden. " +
-            "Ihre Aufgabe besteht darin, die primäre Emotion der abgebildeten" +
+            "Ihre Aufgabe besteht darin, die primäre Emotion der abgebildeten " +
             "Person zu erkennen.",
 
         type: "photo",
@@ -343,7 +343,7 @@ const taskGroups = [
         groupIntro:
             "In diesem Aufgabenblock sehen Sie Eckdaten einer realen Immobilie. " +
             "Sie erhalten jeweils ein Foto der Immobilie, sowie zusätzliche Eckdaten, " +
-            "u.a. Baujahr, Wohnfläche und Lage." +
+            "u.a. Baujahr, Wohnfläche und Lage. " +
             "Ihre Aufgabe besteht darin, den gelisteten Kaufpreis der Immobilie einzuschätzen.",
 
         type: "table",
