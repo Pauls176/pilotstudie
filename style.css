@@ -49,6 +49,7 @@ body {
 .group-intro-text {
     line-height: 1.6;
     margin-bottom: 32px;
+    white-space: pre-line;
 }
 
 .group-intro-section .answer-button {
