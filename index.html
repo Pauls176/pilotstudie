@@ -23,39 +23,22 @@
             <span id="task-counter">Aufgabe 1 von 25</span>
         </header>
 
-        <section class="task-section">
+        <section class="task-section" id="task-section">
 
             <h1 id="task-title">
                 Aufgabe
             </h1>
 
-            <p id="task-description">
+            <div id="task-description">
                 Bitte lesen Sie die Aufgabenstellung sorgfältig
-                und beantworten Sie anschließend die Frage im Chat.
-            </p>
-
-        </section>
-
-        <section class="chat-container">
-
-            <div id="chat-messages" class="chat-messages">
-
-                <div class="message bot-message">
-                    <div class="avatar">AI</div>
-
-                    <div class="message-content">
-                        <p>
-                            Hallo! Bitte geben Sie Ihre Antwort
-                            auf die Aufgabe ein.
-                        </p>
-                    </div>
-                </div>
-
+                und beantworten Sie anschließend die Frage.
             </div>
+
+            <p id="task-instruction" class="task-instruction"></p>
 
             <div class="answer-area">
 
-                <div class="answer-options">
+                <div class="answer-options" id="answer-options">
 
                     <button
                         class="answer-button"
@@ -74,6 +57,65 @@
                 </div>
 
             </div>
+
+        </section>
+
+        <section class="rating-section" id="rating-section" hidden>
+
+            <p class="rating-question">
+                Wie objektiv oder subjektiv empfanden Sie diese Aufgabenstellung?
+            </p>
+
+            <div class="rating-scale">
+
+                <span class="rating-endpoint">objektiv</span>
+
+                <div class="rating-options" id="rating-options">
+
+                    <label class="rating-option">
+                        <input type="radio" name="objectivity-rating" value="1">
+                        <span>1</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="objectivity-rating" value="2">
+                        <span>2</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="objectivity-rating" value="3">
+                        <span>3</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="objectivity-rating" value="4">
+                        <span>4</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="objectivity-rating" value="5">
+                        <span>5</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="objectivity-rating" value="6">
+                        <span>6</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="objectivity-rating" value="7">
+                        <span>7</span>
+                    </label>
+
+                </div>
+
+                <span class="rating-endpoint">subjektiv</span>
+
+            </div>
+
+            <button id="rating-submit" class="answer-button" disabled>
+                Weiter
+            </button>
 
         </section>
 
