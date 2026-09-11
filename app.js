@@ -55,11 +55,11 @@ console.log(
 
 
 /* ==========================================================
-   Taskgruppen (5 Themen à 5 Varianten)
+   Taskgruppen (5 Themen à 5-10 Varianten)
    ==========================================================
 
    Jede Gruppe enthält die gruppenweiten Angaben (Frage,
-   Instruktionstext, Antwortoptionen) und 5 Varianten mit
+   Instruktionstext, Antwortoptionen) und ihren Varianten mit
    den eigentlichen Daten (u.a. der richtigen Antwort). */
 
 const taskGroups = [
@@ -564,7 +564,7 @@ function shuffle(array) {
 
 /* Session-Aufgabenliste aufbauen:
    - Reihenfolge der Taskgruppen wird randomisiert
-   - Reihenfolge der 5 Varianten je Gruppe wird randomisiert
+   - Reihenfolge der Task Varianten je Gruppe wird randomisiert
    - groupOrder hält fest, an welcher Stelle eine Gruppe in
      der randomisierten Reihenfolge durchlaufen wurde
    - isFirstInGroup markiert die erste Aufgabe einer Gruppe,
