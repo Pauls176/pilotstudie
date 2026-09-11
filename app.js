@@ -345,47 +345,47 @@ const taskGroups = [
         variants: [
             {
                 variantId: "emotion_01",
-                image: "images/emot-1.jpg",
+                image: "images/emot-1.png",
                 correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_02",
-                image: "images/emot-2.jpg",
+                image: "images/emot-2.png",
                 correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_03",
-                image: "images/emot-3.jpg",
+                image: "images/emot-3.png",
                 correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_04",
-                image: "images/emot-4.jpg",
+                image: "images/emot-4.png",
                 correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_05",
-                image: "images/emot-5.jpg",
+                image: "images/emot-5.png",
                 correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_06",
-                image: "images/emot-6.jpg",
+                image: "images/emot-6.png",
                 correctAnswer: "Überraschung",
             },
             {
                 variantId: "emotion_07",
-                image: "images/emot-7.jpg",
+                image: "images/emot-7.png",
                 correctAnswer: "Überraschung",
             },
             {
                 variantId: "emotion_08",
-                image: "images/emot-8.jpg",
+                image: "images/emot-8.png",
                 correctAnswer: "Überraschung",
             },
             {
                 variantId: "emotion_09",
-                image: "images/emot-9.jpg",
+                image: "images/emot-9.png",
                 correctAnswer: "Überraschung",
             }
         ]
