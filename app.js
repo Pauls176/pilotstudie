@@ -39,6 +39,8 @@ const taskGroups = [
     {
         groupId: "speed_dating",
 
+        groupLabel: "Speed-Dating-Partner",
+
         type: "table",
 
         prompt:
@@ -157,6 +159,8 @@ const taskGroups = [
     {
         groupId: "hotel_review",
 
+        groupLabel: "Hotelrezension",
+
         type: "text",
 
         prompt:
@@ -228,6 +232,8 @@ const taskGroups = [
     {
         groupId: "emotion",
 
+        groupLabel: "Emotionserkennung",
+
         type: "photo",
 
         prompt:
@@ -276,6 +282,8 @@ const taskGroups = [
     /* Taskgruppe: Immobilienwerte (Foto + Tabelle) */
     {
         groupId: "real_estate",
+
+        groupLabel: "Immobilienbewertung",
 
         type: "table",
 
@@ -379,6 +387,8 @@ const taskGroups = [
     /* Taskgruppe: Regenvorhersage (Tabelle) */
     {
         groupId: "rain_forecast",
+
+        groupLabel: "Regenvorhersage",
 
         type: "table",
 
@@ -507,6 +517,7 @@ function buildSessionTasks(groups) {
 
                 id: variant.variantId,
                 groupId: group.groupId,
+                groupLabel: group.groupLabel,
                 groupOrder: groupOrder,
                 groupPosition: groupPosition,
                 isLastInGroup:
@@ -886,6 +897,11 @@ function showRatingScreen(task) {
 
     pendingRatingTask =
         task;
+
+    document.getElementById(
+        "rating-group-name"
+    ).textContent =
+        task.groupLabel;
 
     document
         .querySelectorAll(
