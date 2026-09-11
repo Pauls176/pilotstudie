@@ -468,7 +468,7 @@ const taskGroups = [
                 correctAnswer: "weniger als 550.000€",
             },
             {
-                variantId: "real_estate_04",
+                variantId: "real_estate_06",
                 image: "images/immo-6.webp",
                 table: {
                     headers: ["", ""],
@@ -484,7 +484,7 @@ const taskGroups = [
                 correctAnswer: "mehr als 550.000€",
             },
             {
-                variantId: "real_estate_05",
+                variantId: "real_estate_07",
                 image: "images/immo-7.webp",
                 table: {
                     headers: ["", ""],
@@ -498,6 +498,70 @@ const taskGroups = [
                     ]
                 },
                 correctAnswer: "weniger als 550.000€",
+            },
+            {
+                variantId: "real_estate_04",
+                image: "images/immo-4.webp",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Titel", "Kleines Reihenmittelhaus nebst Garage in einer Seitenstraße"],
+                        ["Baujahr", "1957"],
+                        ["Ort", "Benrath, 40593 Düsseldorf"],
+                        ["Zimmer", "4"],
+                        ["Wohnfläche in m²", "84,01"],
+                        ["Grundstücksfläche in m²", "290.04"]
+                    ]
+                },
+                correctAnswer: "weniger als 550.000€",
+            },
+            {
+                variantId: "real_estate_05",
+                image: "images/immo-5.webp",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Titel", "Großzügiges Wohnen mit gehobener Ausstattung - Bungalow in Düsseldorf"],
+                        ["Baujahr", "1972"],
+                        ["Ort", "Urdenbach, 40593 Düsseldorf"],
+                        ["Zimmer", "4"],
+                        ["Wohnfläche in m²", "154,96"],
+                        ["Grundstücksfläche in m²", "304"]
+                    ]
+                },
+                correctAnswer: "mehr als 550.000€",
+            },
+            {
+                variantId: "real_estate_08",
+                image: "images/immo-8.webp",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Titel", "Mit malerischem Wasserblick! Stilvolles Altstadthaus in begehrter Wohnlage auf der Altstadtinsel!"],
+                        ["Baujahr", "1600"],
+                        ["Ort", "Innenstadt, 23552 Lübeck"],
+                        ["Zimmer", "4"],
+                        ["Wohnfläche in m²", "90"],
+                        ["Grundstücksfläche in m²", "42"]
+                    ]
+                },
+                correctAnswer: "weniger als 550.000€",
+            },
+            {
+                variantId: "real_estate_09",
+                image: "images/immo-9.webp",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Titel", "Bestes, ruhiges München Obermenzing S2, nh. Grandlschule, DHH, 3 Zi , Bad, Wc, Balk, Terr, Garten"],
+                        ["Baujahr", "1982"],
+                        ["Ort", "Obermenzing, 81247 München"],
+                        ["Zimmer", "3"],
+                        ["Wohnfläche in m²", "77"],
+                        ["Grundstücksfläche in m²", "196"]
+                    ]
+                },
+                correctAnswer: "mehr als 550.000€",
             }
         ]
     },
