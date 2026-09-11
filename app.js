@@ -821,7 +821,9 @@ function renderTask() {
             document.createElement("table");
 
         table.className =
-            "task-table";
+            task.groupId === "speed_dating"
+                ? "task-table task-table--speed-dating"
+                : "task-table";
 
 
         // Tabellenkopf
