@@ -41,6 +41,11 @@ const taskGroups = [
 
         groupLabel: "Speed-Dating-Partner",
 
+        groupIntro:
+            "In diesem Aufgabenblock sehen Sie jeweils eine Tabelle mit " +
+            "Angaben zu einem Speed-Dating-Paar, u.a. Alter, Studium und " +
+            "gegenseitige Bewertungen.",
+
         type: "table",
 
         prompt:
@@ -66,11 +71,11 @@ const taskGroups = [
                         ["Alter", "21", "31"],
                         ["Studium", "Jura", "Betriebswirtschaftslehre"],
                         ["Freizeitaktivitäten", "mehrmals/Woche", "mehrmals/Woche"],
-                        ["Attraktivitätsbewertung (der/s Partner/in)", "7", "7"],
-                        ["Aufrichtigkeitsbewertung (der/s Partner/in)", "5", "10"],
-                        ["Intelligenzbewertung (der/s Partner/in)", "7", "10"],
-                        ["Unterhaltsamkeitsbewertung (der/s Partner/in)", "7", "2"],
-                        ["Ambitionsbewertung (der/s Partner/in)", "7", "8"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "7", "7"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "5", "10"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "7", "10"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "7", "2"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "7", "8"],
                         ["Interessenähnlichkeit", "73.5%", "73.5%"]
                     ]
                 },
@@ -85,11 +90,11 @@ const taskGroups = [
                         ["Alter", "22", "27"],
                         ["Studium", "Kommunikationswissenschaften", "Chemie"],
                         ["Freizeitaktivitäten", "mehrmals/Woche", "einmal/Woche"],
-                        ["Attraktivitätsbewertung (der/s Partner/in)", "7", "9"],
-                        ["Aufrichtigkeitsbewertung (der/s Partner/in)", "7", "8"],
-                        ["Intelligenzbewertung (der/s Partner/in)", "7", "7"],
-                        ["Unterhaltsamkeitsbewertung (der/s Partner/in)", "8", "8"],
-                        ["Ambitionsbewertung (der/s Partner/in)", "7", "5"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "7", "9"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "7", "8"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "7", "7"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "8", "8"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "7", "5"],
                         ["Interessenähnlichkeit", "57%", "57%"]
                     ]
                 },
@@ -102,13 +107,13 @@ const taskGroups = [
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "28", "32"],
-                        ["Studium", "Internationale Beziehungen/Betriebswirtschaftslehre", "Psychologie"],
+                        ["Studium", "Internationale Beziehungen/ Betriebswirtschaftslehre", "Psychologie"],
                         ["Freizeitaktivitäten", "zweimal/Woche", "zweimal/Monat"],
-                        ["Attraktivitätsbewertung (der/s Partner/in)", "5", "7"],
-                        ["Aufrichtigkeitsbewertung (der/s Partner/in)", "8", "7"],
-                        ["Intelligenzbewertung (der/s Partner/in)", "6", "10"],
-                        ["Unterhaltsamkeitsbewertung (der/s Partner/in)", "7", "—"],
-                        ["Ambitionsbewertung (der/s Partner/in)", "7", "8"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "5", "7"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "8", "7"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "6", "10"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "7", "—"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "7", "8"],
                         ["Interessenähnlichkeit", "58%", "58%"]
                     ]
                 },
@@ -121,13 +126,13 @@ const taskGroups = [
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "25", "24"],
-                        ["Studium", "Soziale Arbeit", "Biomedizinisch/Technik"],
+                        ["Studium", "Soziale Arbeit", "Biomedizin/ Technik"],
                         ["Freizeitaktivitäten", "einmal/Woche", "einmal/Woche"],
-                        ["Attraktivitätsbewertung (der/s Partner/in)", "8", "4"],
-                        ["Aufrichtigkeitsbewertung (der/s Partner/in)", "6", "8"],
-                        ["Intelligenzbewertung (der/s Partner/in)", "7", "7"],
-                        ["Unterhaltsamkeitsbewertung (der/s Partner/in)", "7", "6"],
-                        ["Ambitionsbewertung (der/s Partner/in)", "6", "6"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "8", "4"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "6", "8"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "7", "7"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "7", "6"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "6", "6"],
                         ["Interessenähnlichkeit", "59.5%", "59.5%"]
                     ]
                 },
@@ -140,13 +145,13 @@ const taskGroups = [
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "25", "28"],
-                        ["Studium", "Internationale Beziehungen/Betriebswirtschaftslehre", "Biomedizin"],
+                        ["Studium", "Internationale Beziehungen/ Betriebswirtschaftslehre", "Biomedizin"],
                         ["Freizeitaktivitäten", "zweimal/Woche", "einmal/Woche"],
-                        ["Attraktivitätsbewertung (der/s Partner/in)", "8", "7"],
-                        ["Aufrichtigkeitsbewertung (der/s Partner/in)", "8", "10"],
-                        ["Intelligenzbewertung (der/s Partner/in)", "6", "8"],
-                        ["Unterhaltsamkeitsbewertung (der/s Partner/in)", "6", "9"],
-                        ["Ambitionsbewertung (der/s Partner/in)", "6", "—"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "8", "7"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "8", "10"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "6", "8"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "6", "9"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "6", "—"],
                         ["Interessenähnlichkeit", "66%", "66%"]
                     ]
                 },
@@ -160,6 +165,10 @@ const taskGroups = [
         groupId: "hotel_review",
 
         groupLabel: "Hotelrezension",
+
+        groupIntro:
+            "In diesem Aufgabenblock lesen Sie jeweils den Text einer " +
+            "Hotelrezension.",
 
         type: "text",
 
@@ -234,6 +243,9 @@ const taskGroups = [
 
         groupLabel: "Emotionserkennung",
 
+        groupIntro:
+            "In diesem Aufgabenblock sehen Sie jeweils ein Foto einer Person.",
+
         type: "photo",
 
         prompt:
@@ -284,6 +296,10 @@ const taskGroups = [
         groupId: "real_estate",
 
         groupLabel: "Immobilienbewertung",
+
+        groupIntro:
+            "In diesem Aufgabenblock sehen Sie jeweils ein Foto sowie " +
+            "Eckdaten zu einer Immobilie, u.a. Baujahr, Wohnfläche und Lage.",
 
         type: "table",
 
@@ -389,6 +405,11 @@ const taskGroups = [
         groupId: "rain_forecast",
 
         groupLabel: "Regenvorhersage",
+
+        groupIntro:
+            "In diesem Aufgabenblock sehen Sie jeweils Wetterdaten für " +
+            "einen Tag in Hamburg (Fuhlsbüttel), u.a. Temperatur und " +
+            "Sonnenstunden.",
 
         type: "table",
 
@@ -498,6 +519,8 @@ function shuffle(array) {
    - Reihenfolge der 5 Varianten je Gruppe wird randomisiert
    - groupOrder hält fest, an welcher Stelle eine Gruppe in
      der randomisierten Reihenfolge durchlaufen wurde
+   - isFirstInGroup markiert die erste Aufgabe einer Gruppe,
+     vor der der Gruppen-Einleitungsbildschirm gezeigt wird
    - isLastInGroup markiert die letzte Aufgabe einer Gruppe,
      nach der die Objektivitäts-/Subjektivitäts-Frage kommt */
 
@@ -520,8 +543,12 @@ function buildSessionTasks(groups) {
                 groupLabel: group.groupLabel,
                 groupOrder: groupOrder,
                 groupPosition: groupPosition,
+                isFirstInGroup:
+                    groupPosition === 1,
                 isLastInGroup:
                     groupPosition === group.variants.length,
+
+                groupIntro: group.groupIntro,
 
                 type: group.type,
                 prompt: group.prompt,
@@ -548,14 +575,68 @@ let currentTask = 0;
 
 let pendingRatingTask = null;
 
-/* Aufgabe laden */
+/* Aktuelle Aufgabe anzeigen: ggf. zuerst Gruppen-Einleitung */
 
-function loadTask() {
+function goToCurrentTask() {
 
     const task =
         tasks[currentTask];
 
-    /* Aufgabenansicht zeigen, Rating-Ansicht ausblenden */
+    if (task.isFirstInGroup) {
+
+        showGroupIntro(
+            task
+        );
+
+    } else {
+
+        renderTask();
+    }
+}
+
+/* Gruppen-Einleitungsbildschirm anzeigen */
+
+function showGroupIntro(task) {
+
+    document.getElementById(
+        "group-intro-title"
+    ).textContent =
+        task.groupLabel;
+
+    document.getElementById(
+        "group-intro-text"
+    ).textContent =
+        task.groupIntro || "";
+
+    document.getElementById(
+        "task-section"
+    ).hidden =
+        true;
+
+    document.getElementById(
+        "rating-section"
+    ).hidden =
+        true;
+
+    document.getElementById(
+        "group-intro-section"
+    ).hidden =
+        false;
+}
+
+/* Aufgabe laden */
+
+function renderTask() {
+
+    const task =
+        tasks[currentTask];
+
+    /* Aufgabenansicht zeigen, andere Ansichten ausblenden */
+
+    document.getElementById(
+        "group-intro-section"
+    ).hidden =
+        true;
 
     document.getElementById(
         "task-section"
@@ -1087,13 +1168,18 @@ function advanceToNextTask() {
     }
 
 
-    loadTask();
+    goToCurrentTask();
 }
 
 
 /* Abschluss */
 
 function showCompletion() {
+
+    document.getElementById(
+        "group-intro-section"
+    ).hidden =
+        true;
 
     document.getElementById(
         "rating-section"
@@ -1142,6 +1228,19 @@ function showCompletion() {
 }
 
 
+/* Gruppen-Einleitung: Weiter-Button */
+
+document.getElementById(
+    "group-intro-continue"
+).addEventListener(
+    "click",
+    () => {
+
+        renderTask();
+    }
+);
+
+
 /* START */
 
-loadTask();
+goToCurrentTask();
