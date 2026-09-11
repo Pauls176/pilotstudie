@@ -42,9 +42,14 @@ const taskGroups = [
         groupLabel: "Speed-Dating-Partner",
 
         groupIntro:
-            "In diesem Aufgabenblock sehen Sie jeweils eine Tabelle mit " +
-            "Angaben zu einem Speed-Dating-Paar, u.a. Alter, Studium und " +
-            "gegenseitige Bewertungen.",
+            "In diesem Aufgabenblock sehen Sie jeweils zwei Teilnehmer eines" +
+            "Speed-Dating-Events. Es handelt sich um heterosexuelle Paarungen. Sie erhalten eine Tabelle " +
+            "mit den Angaben beider Dating-Partner. Die Teilnehmer wurden unter anderem darum gebeten, " +
+            "ihr Gegenüber auf einer Skala von 1-10 zu bewerten, hinsichtlich Attraktivität, Intelligenz " +
+            "und weiteren Dimensionen. Aus dem Abgleich ihrer persönlichen Interessen wurde für diese Paarung " +
+            "zudem eine prozentuale Interessenähnlichkeit berechnet. Ihre Aufgabe besteht darin, " +
+            "anhand dieser Informationen einzuschätzen, ob die beiden auf ein zweites Date gehen " +
+            "werden. Ein zweites Date kommt nur zustande, wenn beide Partner sich dafür entschieden haben.",
 
         type: "table",
 
@@ -167,8 +172,13 @@ const taskGroups = [
         groupLabel: "Hotelrezension",
 
         groupIntro:
-            "In diesem Aufgabenblock lesen Sie jeweils den Text einer " +
-            "Hotelrezension.",
+            "In diesem Aufgabenblock lesen Sie Hotelrezensionen. " +
+            "Jede Rezension ist in zwei Teile gegliedert: einen positiven " +
+            "und einen negativen Teil, die die Bewertung des Hotelgastes widerspiegeln. " +
+            "Eine Rezension muss nicht beide Teile enthalten, kann also auch ausschließlich positiv " +
+            "oder ausschließlich negativ sein. " +
+            "Ihre Aufgabe besteht darin, zu beurteilen, ob die Rezension von einem Menschen " +
+            "verfasst wurde oder KI-generiert ist.",
 
         type: "text",
 
@@ -244,7 +254,11 @@ const taskGroups = [
         groupLabel: "Emotionserkennung",
 
         groupIntro:
-            "In diesem Aufgabenblock sehen Sie jeweils ein Foto einer Person.",
+            "In diesem Aufgabenblock sehen Sie jeweils ein Foto einer Person. " +
+            "Es handelt sich um Standbilder realer Personen, die in einem emotionalen Moment " +
+            "aufgenommen wurden. " +
+            "Ihre Aufgabe besteht darin, die primäre Emotion der abgebildeten" +
+            "Person zu erkennen.",
 
         type: "photo",
 
@@ -298,8 +312,10 @@ const taskGroups = [
         groupLabel: "Immobilienbewertung",
 
         groupIntro:
-            "In diesem Aufgabenblock sehen Sie jeweils ein Foto sowie " +
-            "Eckdaten zu einer Immobilie, u.a. Baujahr, Wohnfläche und Lage.",
+            "In diesem Aufgabenblock sehen Sie Eckdaten einer realen Immobilie. " +
+            "Sie erhalten jeweils ein Foto der Immobilie, sowie zusätzliche Eckdaten, " +
+            "u.a. Baujahr, Wohnfläche und Lage." +
+            "Ihre Aufgabe besteht darin, den gelisteten Kaufpreis der Immobilie einzuschätzen.",
 
         type: "table",
 
@@ -408,8 +424,11 @@ const taskGroups = [
 
         groupIntro:
             "In diesem Aufgabenblock sehen Sie jeweils Wetterdaten für " +
-            "einen Tag in Hamburg (Fuhlsbüttel), u.a. Temperatur und " +
-            "Sonnenstunden.",
+            "einen Tag in Hamburg (Fuhlsbüttel). Die Daten sind einer lokalen Wetterstation " +
+            "entnommen und beinhalten u.a. Durchschnittstemperatur, Sonnenstunden und Niederschläge " +
+            "der vorigen drei Tage. " +
+            "Ihre Aufgabe besteht darin, eine Prognose abzugeben, ob es an diesem Tag " +
+            "regnen wird oder nicht.",
 
         type: "table",
 
