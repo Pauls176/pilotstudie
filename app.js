@@ -76,9 +76,10 @@ const taskGroups = [
             "mit den Angaben beider Dating-Partner. Die Teilnehmer wurden unter anderem darum gebeten, " +
             "ihr Gegenüber auf einer Skala von 1-10 zu bewerten, hinsichtlich Attraktivität, Intelligenz " +
             "und weiteren Dimensionen. Aus dem Abgleich ihrer persönlichen Interessen wurde für diese Paarung " +
-            "zudem eine prozentuale Interessenähnlichkeit berechnet. Ihre Aufgabe besteht darin, " +
-            "anhand dieser Informationen einzuschätzen, ob die beiden auf ein zweites Date gehen " +
-            "werden. Ein zweites Date kommt nur zustande, wenn beide Partner sich dafür entschieden haben.",
+            "zudem eine prozentuale Interessenähnlichkeit berechnet. \n\n" +
+            "Ihre Aufgabe besteht darin, anhand dieser Informationen einzuschätzen, " +
+            "ob die beiden auf ein zweites Date gehen werden. Ein zweites Date " +
+            "kommt nur zustande, wenn beide Partner sich dafür entschieden haben.",
 
         type: "table",
 
@@ -205,7 +206,7 @@ const taskGroups = [
             "Jede Rezension ist in zwei Teile gegliedert: einen positiven " +
             "und einen negativen Teil, die die Bewertung des Hotelgastes widerspiegeln. " +
             "Eine Rezension muss nicht beide Teile enthalten, kann also auch ausschließlich positiv " +
-            "oder ausschließlich negativ sein. " +
+            "oder ausschließlich negativ sein. \n\n" +
             "Ihre Aufgabe besteht darin, zu beurteilen, ob die Rezension von einem Menschen " +
             "verfasst wurde oder KI-generiert ist.",
 
@@ -226,7 +227,7 @@ const taskGroups = [
 
         variants: [
             {
-                variantId: "hotel_review_01",
+                variantId: "hotel_review_03",
                 information:
                     "Positiv:\n\n" +
                     "Tolles Appartement im Herzen von Trastevere, mitten in einem charmanten Gässchen! " +
@@ -235,7 +236,7 @@ const taskGroups = [
                 correctAnswer: "von einem Menschen",
             },
             {
-                variantId: "hotel_review_02",
+                variantId: "hotel_review_04",
                 information:
                     "Positiv:\n\n" +
                     "Große Zimmer modern eingerichtet. 10-15min zu Fuß beim Weißen Haus. " +
@@ -243,7 +244,7 @@ const taskGroups = [
                 correctAnswer: "von einem Menschen",
             },
             {
-                variantId: "hotel_review_03",
+                variantId: "hotel_review_05",
                 information:
                     "Positiv:\n\n" +
                     "Entgegen der Kritik, bin ich auf Mitarbeiter getroffen, die tatsächlich Englisch sprachen " +
@@ -253,7 +254,7 @@ const taskGroups = [
                 correctAnswer: "KI-generiert",
             },
             {
-                variantId: "hotel_review_04",
+                variantId: "hotel_review_06",
                 information:
                     "Positiv:\n\n" +
                     "Die Lage des Hotel Passy Eiffel in Paris ist hervorragend, nur wenige Gehminuten vom " +
@@ -264,13 +265,50 @@ const taskGroups = [
                 correctAnswer: "KI-generiert",
             },
             {
-                variantId: "hotel_review_05",
+                variantId: "hotel_review_08",
                 information:
                     "Positiv:\n\n" +
                     "Hervorragende Lage, in der Nähe vieler Sehenswürdigkeiten. Der Service war ausgezeichnet, " +
                     "und das Frühstück war vielfältig und lecker.\n\n" +
                     "Negativ:\n\n" +
                     "Die Zimmer zur Straße hin können etwas laut sein, aber mit Ohrenstöpsel ist es in Ordnung.",
+                correctAnswer: "KI-generiert",
+            },
+            {
+                variantId: "hotel_review_01",
+                information:
+                    "Positiv:\n\n" +
+                    "Lage direkt an einer U-Bahn-Station. Perfekt. Waschmaschinen und Trockner vorhanden. " +
+                    "Gutes Frühstück, guter Concierge. Danke.",
+                correctAnswer: "von einem Menschen",
+            },
+            {
+                variantId: "hotel_review_02",
+                information:
+                    "Positiv:\n\n" +
+                    "Lage ausgezeichnet, Zimmerausstattung gut, Personal kompetent und freundlich.\n\n" +
+                    "Negativ:\n\n" +
+                    "Das Frühstücksbuffet ist marginal, da gibt es in der Umgebung günstigere und bessere Möglichkeiten.",
+                correctAnswer: "von einem Menschen",
+            },
+            {
+                variantId: "hotel_review_07",
+                information:
+                    "Positiv:\n\n" +
+                    "Das Hotel B Montmartre ist ein kleines Juwel in Paris... \n\n" +
+                    "Negativ:\n\n" +
+                    "Das Einzige, was uns nicht so gut gefallen hat, waren die relativ hohen Preise in der Hotelbar. " +
+                    "Aber das ist Paris, es lohnt sich trotzdem, hier zu bleiben.",
+                correctAnswer: "KI-generiert",
+            },
+            {
+                variantId: "hotel_review_09",
+                information:
+                    "Positiv:\n\n" +
+                    "Die Lage des Hotels ist ziemlich gut, leicht zu erreichen. Das Frühstück war in Ordnung. \n\n" +
+                    "Negativ:\n\n" +
+                    "Das Hotelzimmer war sehr alt und nicht gut gepflegt. Es gab viele Probleme mit der Elektrik im " +
+                    "Zimmer. Das Badezimmer war schmutzig und es gab Probleme mit der Klimaanlage... ",
                 correctAnswer: "KI-generiert",
             }
         ]
@@ -285,7 +323,7 @@ const taskGroups = [
         groupIntro:
             "In diesem Aufgabenblock sehen Sie jeweils ein Foto einer Person. " +
             "Es handelt sich um Standbilder realer Personen, die in einem emotionalen Moment " +
-            "aufgenommen wurden. " +
+            "aufgenommen wurden. \n\n" +
             "Ihre Aufgabe besteht darin, die primäre Emotion der abgebildeten " +
             "Person zu erkennen.",
 
@@ -362,7 +400,7 @@ const taskGroups = [
         groupIntro:
             "In diesem Aufgabenblock sehen Sie Eckdaten einer realen Immobilie. " +
             "Sie erhalten jeweils ein Foto der Immobilie, sowie zusätzliche Eckdaten, " +
-            "u.a. Baujahr, Wohnfläche und Lage. " +
+            "u.a. Baujahr, Wohnfläche und Lage. \n\n" +
             "Ihre Aufgabe besteht darin, den gelisteten Kaufpreis der Immobilie einzuschätzen.",
 
         type: "table",
@@ -474,7 +512,7 @@ const taskGroups = [
             "In diesem Aufgabenblock sehen Sie jeweils Wetterdaten für " +
             "einen Tag in Hamburg (Fuhlsbüttel). Die Daten sind einer lokalen Wetterstation " +
             "entnommen und beinhalten u.a. Durchschnittstemperatur, Sonnenstunden und Niederschläge " +
-            "der vorigen drei Tage. " +
+            "der vorigen drei Tage. \n\n" +
             "Ihre Aufgabe besteht darin, eine Prognose abzugeben, ob es an diesem Tag " +
             "regnen wird oder nicht.",
 
