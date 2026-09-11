@@ -301,35 +301,54 @@ const taskGroups = [
 
         options: [
             "Überraschung",
-            "Besorgnis"
+            "Wut"
         ],
 
         variants: [
             {
                 variantId: "emotion_01",
-                image: "images/placeholder.jpg",
-                correctAnswer: "Überraschung",
+                image: "images/emot-1.jpg",
+                correctAnswer: "Wut",
             },
-            /* TODO: Platzhalter-Varianten durch echte Fotos/Inhalte ersetzen */
             {
                 variantId: "emotion_02",
-                image: "images/placeholder.jpg",
-                correctAnswer: "Überraschung",
+                image: "images/emot-2.jpg",
+                correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_03",
-                image: "images/placeholder.jpg",
-                correctAnswer: "Besorgnis",
+                image: "images/emot-3.jpg",
+                correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_04",
-                image: "images/placeholder.jpg",
-                correctAnswer: "Überraschung",
+                image: "images/emot-4.jpg",
+                correctAnswer: "Wut",
             },
             {
                 variantId: "emotion_05",
-                image: "images/placeholder.jpg",
-                correctAnswer: "Besorgnis",
+                image: "images/emot-5.jpg",
+                correctAnswer: "Wut",
+            },
+            {
+                variantId: "emotion_06",
+                image: "images/emot-6.jpg",
+                correctAnswer: "Überraschung",
+            },
+            {
+                variantId: "emotion_07",
+                image: "images/emot-7.jpg",
+                correctAnswer: "Überraschung",
+            },
+            {
+                variantId: "emotion_08",
+                image: "images/emot-8.jpg",
+                correctAnswer: "Überraschung",
+            },
+            {
+                variantId: "emotion_09",
+                image: "images/emot-9.jpg",
+                correctAnswer: "Überraschung",
             }
         ]
     },
