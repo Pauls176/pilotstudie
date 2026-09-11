@@ -13,15 +13,44 @@ const supabaseClient =
     );
 
 
-/* Teilnehmer-ID erzeugen, beim Prototypen noch randomisert, später durch SoSci erzeugt */
+/* LimeSurvey-Anbindung: Rückleitungs-Umfrage nach Abschluss des Prototyps */
+
+const EXIT_SURVEY_URL =
+    "https://studentische-umfragen.uni-hamburg.de/index.php/832672";
+
+const EXIT_REDIRECT_DELAY_MS =
+    2000;
+
+
+/* Teilnehmer-ID: im Echtbetrieb kommt sie per ?id=... von LimeSurvey.
+   Testmodus (lokal, file://, oder ?test=1) erlaubt den Durchlauf ohne
+   LimeSurvey und erzeugt stattdessen eine zufällige Test-ID. */
+
+const urlParams =
+    new URLSearchParams(window.location.search);
+
+const idFromUrl =
+    urlParams.get("id");
+
+const isTestMode =
+    location.hostname === "localhost" ||
+    location.hostname === "127.0.0.1" ||
+    location.protocol === "file:" ||
+    urlParams.get("test") === "1";
+
+const hasValidSession =
+    isTestMode ||
+    Boolean(idFromUrl);
 
 const participantId =
-    "TEST-" +
-    crypto.randomUUID();
+    isTestMode ?
+        ("TEST-" + crypto.randomUUID()) :
+        idFromUrl;
 
 console.log(
     "Participant ID:",
-    participantId
+    participantId,
+    isTestMode ? "(Testmodus, keine echte Studiensitzung)" : ""
 );
 
 
@@ -1237,8 +1266,81 @@ function showCompletion() {
     document.getElementById(
         "task-instruction"
     ).textContent =
-        "Vielen Dank für Ihre Teilnahme.";
+        isTestMode ?
+            "Vielen Dank für Ihre Teilnahme. (Testmodus – keine Weiterleitung.)" :
+            "Sie werden gleich zur Umfrage zurückgeleitet …";
 
+
+    document.querySelector(
+        ".answer-area"
+    ).style.display =
+        "none";
+
+
+    if (!isTestMode) {
+
+        setTimeout(
+            () => {
+
+                window.location.href =
+                    EXIT_SURVEY_URL +
+                    "?id=" +
+                    encodeURIComponent(
+                        participantId
+                    );
+            },
+            EXIT_REDIRECT_DELAY_MS
+        );
+    }
+}
+
+
+/* Fehlerfall: Seite wurde ohne gültige Teilnehmer-ID aufgerufen
+   (z. B. direkter Aufruf statt über den Studienlink) */
+
+function showMissingIdError() {
+
+    document.getElementById(
+        "group-intro-section"
+    ).hidden =
+        true;
+
+    document.getElementById(
+        "rating-section"
+    ).hidden =
+        true;
+
+    document.getElementById(
+        "task-section"
+    ).hidden =
+        false;
+
+    document.getElementById(
+        "task-counter"
+    ).textContent =
+        "Fehler";
+
+    document.getElementById(
+        "task-title"
+    ).textContent =
+        "Diese Seite kann nicht direkt aufgerufen werden";
+
+    document.getElementById(
+        "task-description"
+    ).innerHTML = `
+
+        <p>
+            Für die Studie fehlt eine gültige Teilnehmer-Kennung.
+            Bitte starten Sie die Studie über den Ihnen zugesandten
+            Umfrage-Link.
+        </p>
+
+    `;
+
+    document.getElementById(
+        "task-instruction"
+    ).textContent =
+        "";
 
     document.querySelector(
         ".answer-area"
@@ -1262,4 +1364,11 @@ document.getElementById(
 
 /* START */
 
-goToCurrentTask();
+if (hasValidSession) {
+
+    goToCurrentTask();
+
+} else {
+
+    showMissingIdError();
+}
