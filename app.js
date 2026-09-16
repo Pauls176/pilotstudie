@@ -1039,6 +1039,8 @@ let awaitingRating = false;
 
 let pendingRatingTask = null;
 
+let taskShownAt = null;
+
 const storedProgress =
     loadStoredProgress();
 
@@ -1125,6 +1127,9 @@ function renderTask() {
 
     const task =
         tasks[currentTask];
+
+    taskShownAt =
+        Date.now();
 
     /* Aufgabenansicht zeigen, andere Ansichten ausblenden */
 
@@ -1437,6 +1442,13 @@ async function saveTrial(task, answer) {
     const answerCorrect =
         answer === task.correctAnswer;
 
+    const responseTimeSeconds =
+        taskShownAt !== null ?
+            Math.round(
+                (Date.now() - taskShownAt) / 100
+            ) / 10 :
+            null;
+
     const {
         error
     } = await supabaseClient
@@ -1468,7 +1480,10 @@ async function saveTrial(task, answer) {
                 task.correctAnswer,
 
             first_answer_correct:
-                answerCorrect
+                answerCorrect,
+
+            response_time_seconds:
+                responseTimeSeconds
         });
 
 
