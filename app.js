@@ -717,6 +717,84 @@ const taskGroups = [
                     ]
                 },
                 correctAnswer: "Regen",
+            },
+            {
+                variantId: "rain_forecast_06",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Datum", "08.01.2026"],
+                        ["Ø Temperatur", "-1,5 °C"],
+                        ["Sonnenstunden", "0,0 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "2,4 mm"]
+                    ]
+                },
+                correctAnswer: "Regen",
+            },
+            {
+                variantId: "rain_forecast_07",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Datum", "14.01.2026"],
+                        ["Ø Temperatur", "3,9 °C"],
+                        ["Sonnenstunden", "1,5 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "12,2 mm"]
+                    ]
+                },
+                correctAnswer: "Regen",
+            },
+            {
+                variantId: "rain_forecast_08",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Datum", "20.02.2026"],
+                        ["Ø Temperatur", "-1,6 °C"],
+                        ["Sonnenstunden", "3,6 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,8 mm"]
+                    ]
+                },
+                correctAnswer: "Regen",
+            },
+            {
+                variantId: "rain_forecast_09",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Datum", "25.04.2026"],
+                        ["Ø Temperatur", "8,0 °C"],
+                        ["Sonnenstunden", "1,1 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
+                    ]
+                },
+                correctAnswer: "Kein Regen",
+            },
+            {
+                variantId: "rain_forecast_10",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Datum", "17.05.2026"],
+                        ["Ø Temperatur", "11,7 °C"],
+                        ["Sonnenstunden", "6,0 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "8,8 mm"]
+                    ]
+                },
+                correctAnswer: "Kein Regen",
+            },
+            {
+                variantId: "rain_forecast_11",
+                table: {
+                    headers: ["", ""],
+                    rows: [
+                        ["Datum", "07.08.2026"],
+                        ["Ø Temperatur", "16,1 °C"],
+                        ["Sonnenstunden", "3,2 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,2 mm"]
+                    ]
+                },
+                correctAnswer: "Kein Regen",
             }
         ]
     }
