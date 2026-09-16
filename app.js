@@ -1389,8 +1389,8 @@ function showRatingScreen(task) {
         );
 
     document.getElementById(
-        "rating-submit"
-    ).disabled =
+        "rating-error"
+    ).hidden =
         true;
 
     document.getElementById(
@@ -1448,9 +1448,9 @@ document.getElementById(
     () => {
 
         document.getElementById(
-            "rating-submit"
-        ).disabled =
-            false;
+            "rating-error"
+        ).hidden =
+            true;
     }
 );
 
@@ -1466,6 +1466,11 @@ document.getElementById(
             );
 
         if (!selected) {
+
+            document.getElementById(
+                "rating-error"
+            ).hidden =
+                false;
 
             return;
         }

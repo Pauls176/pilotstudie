@@ -155,8 +155,18 @@ body {
     gap: 8px;
 }
 
+.rating-error {
+    margin: 24px 0 0;
+    text-align: center;
+    color: #c0392b;
+    font-size: 14px;
+}
+
 .rating-section .answer-button {
-    margin-top: 40px;
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 40px auto 0;
 }
 
 .rating-option {
