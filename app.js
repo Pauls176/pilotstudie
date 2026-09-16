@@ -1044,11 +1044,14 @@ let taskShownAt = null;
 const storedProgress =
     loadStoredProgress();
 
-if (
-    storedProgress &&
-    Array.isArray(storedProgress.tasks) &&
-    storedProgress.tasks.length > 0
-) {
+const isFreshSession =
+    !(
+        storedProgress &&
+        Array.isArray(storedProgress.tasks) &&
+        storedProgress.tasks.length > 0
+    );
+
+if (!isFreshSession) {
 
     tasks = storedProgress.tasks;
 
@@ -1086,6 +1089,31 @@ function goToCurrentTask() {
     }
 }
 
+/* Einleitungsbildschirm für den gesamten Aufgabenteil anzeigen */
+
+function showStudyIntro() {
+
+    document.getElementById(
+        "task-section"
+    ).hidden =
+        true;
+
+    document.getElementById(
+        "rating-section"
+    ).hidden =
+        true;
+
+    document.getElementById(
+        "group-intro-section"
+    ).hidden =
+        true;
+
+    document.getElementById(
+        "study-intro-section"
+    ).hidden =
+        false;
+}
+
 /* Gruppen-Einleitungsbildschirm anzeigen */
 
 function showGroupIntro(task) {
@@ -1104,6 +1132,11 @@ function showGroupIntro(task) {
         "group-intro-text"
     ).textContent =
         task.groupIntro || "";
+
+    document.getElementById(
+        "study-intro-section"
+    ).hidden =
+        true;
 
     document.getElementById(
         "task-section"
@@ -1132,6 +1165,11 @@ function renderTask() {
         Date.now();
 
     /* Aufgabenansicht zeigen, andere Ansichten ausblenden */
+
+    document.getElementById(
+        "study-intro-section"
+    ).hidden =
+        true;
 
     document.getElementById(
         "group-intro-section"
@@ -1847,6 +1885,19 @@ function showMissingIdError() {
 }
 
 
+/* Studien-Einleitung: Weiter-Button */
+
+document.getElementById(
+    "study-intro-continue"
+).addEventListener(
+    "click",
+    () => {
+
+        goToCurrentTask();
+    }
+);
+
+
 /* Gruppen-Einleitung: Weiter-Button */
 
 document.getElementById(
@@ -1864,7 +1915,11 @@ document.getElementById(
 
 if (hasValidSession) {
 
-    if (currentTask >= tasks.length) {
+    if (isFreshSession) {
+
+        showStudyIntro();
+
+    } else if (currentTask >= tasks.length) {
 
         showCompletion();
 
