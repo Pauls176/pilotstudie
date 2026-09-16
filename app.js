@@ -1032,7 +1032,7 @@ function renderTask() {
     document.getElementById(
         "task-title"
     ).textContent =
-        `Aufgabe ${currentTask + 1}`;
+        `Aufgabe ${task.groupPosition}`;
 
     /* Aufgabenbereich */
 
