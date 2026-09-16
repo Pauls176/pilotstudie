@@ -970,6 +970,11 @@ function goToCurrentTask() {
 function showGroupIntro(task) {
 
     document.getElementById(
+        "task-counter"
+    ).textContent =
+        `Block ${task.groupOrder} von ${taskGroups.length}`;
+
+    document.getElementById(
         "group-intro-title"
     ).textContent =
         task.groupLabel;
