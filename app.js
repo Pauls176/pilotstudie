@@ -705,7 +705,7 @@ const taskGroups = [
         type: "table",
 
         prompt:
-            "Betrachten Sie die folgenden Wetterdaten aus Hamburg (Fuhlsbüttel). " +
+            "Betrachten Sie die folgenden Wetterdaten aus Hamburg (Fuhlsbüttel), Deutschland. " +
             "Hat es an diesem Tag dort geregnet?",
 
         instruction:
@@ -713,8 +713,8 @@ const taskGroups = [
             "zur Regenwahrscheinlichkeit ein.",
 
         options: [
-            "Regen",
-            "Kein Regen"
+            "Kein Regen",
+            "Regen"
         ],
 
         variants: [
@@ -1530,6 +1530,11 @@ function showRatingScreen(task) {
         "rating-error"
     ).hidden =
         true;
+
+    document.getElementById(
+        "rating-submit"
+    ).disabled =
+        false;
 
     document.getElementById(
         "task-section"
