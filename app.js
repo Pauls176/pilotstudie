@@ -1024,7 +1024,7 @@ function renderTask() {
     document.getElementById(
         "task-counter"
     ).textContent =
-        `Aufgabe ${currentTask + 1} von ${tasks.length}`;
+        `Block ${task.groupOrder} von ${taskGroups.length}`;
 
 
     /* Titel */
