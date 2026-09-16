@@ -98,7 +98,7 @@ const taskGroups = [
 
         variants: [
             {
-                variantId: "speed_dating_01",
+                variantId: "speed_dating_04",
                 table: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
@@ -136,7 +136,7 @@ const taskGroups = [
                 correctAnswer: "Ja, zum zweiten Date",
             },
             {
-                variantId: "speed_dating_03",
+                variantId: "speed_dating_06",
                 table: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
@@ -155,7 +155,7 @@ const taskGroups = [
                 correctAnswer: "Nein, kein zweites Date",
             },
             {
-                variantId: "speed_dating_04",
+                variantId: "speed_dating_09",
                 table: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
@@ -174,7 +174,7 @@ const taskGroups = [
                 correctAnswer: "Nein, kein zweites Date",
             },
             {
-                variantId: "speed_dating_05",
+                variantId: "speed_dating_01",
                 table: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
@@ -191,6 +191,63 @@ const taskGroups = [
                     ]
                 },
                 correctAnswer: "Ja, zum zweiten Date",
+            },
+            {
+                variantId: "speed_dating_03",
+                table: {
+                    headers: ["Merkmal", "Person A", "Person B"],
+                    rows: [
+                        ["Geschlecht", "Frau", "Mann"],
+                        ["Alter", "25", "27"],
+                        ["Studium", "Bildung/ Wissenschaft", "Wirtschaft/ Finanzen"],
+                        ["Freizeitaktivitäten", "mehrmals/Woche", "zweimal/Woche"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "7", "6"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "7", "10"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "7", "9"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "9", "9"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "—", "4"],
+                        ["Interessenähnlichkeit", "63%", "63%"]
+                    ]
+                },
+                correctAnswer: "Ja, zum zweiten Date",
+            },
+            {
+                variantId: "speed_dating_07",
+                table: {
+                    headers: ["Merkmal", "Person A", "Person B"],
+                    rows: [
+                        ["Geschlecht", "Frau", "Mann"],
+                        ["Alter", "24", "27"],
+                        ["Studium", "Sprache/ Journalismus", "Wirtschaft/ Finanzen"],
+                        ["Freizeitaktivitäten", "zweimal/Woche", "zweimal/Woche"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "4", "5"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "2", "8"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "3", "8"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "3", "8"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "1", "8"],
+                        ["Interessenähnlichkeit", "69.5%", "69.5%"]
+                    ]
+                },
+                correctAnswer: "Nein, zum zweiten Date",
+            },
+            {
+                variantId: "speed_dating_10",
+                table: {
+                    headers: ["Merkmal", "Person A", "Person B"],
+                    rows: [
+                        ["Geschlecht", "Frau", "Mann"],
+                        ["Alter", "21", "25"],
+                        ["Studium", "Jura", "Wirtschaft/ Finanzen"],
+                        ["Freizeitaktivitäten", "mehrmals/Woche", "mehrmals/Woche"],
+                        ["Bewertung Attraktivität (deiner/s Partner/in)", "7", "4"],
+                        ["Bewertung Aufrichtigkeit (deiner/s Partner/in)", "7", "9"],
+                        ["Bewertung Intelligenz (deiner/s Partner/in)", "8", "7"],
+                        ["Bewertung Unterhaltsamkeit (deiner/s Partner/in)", "8", "4"],
+                        ["Bewertung Ambition (deiner/s Partner/in)", "7", "6"],
+                        ["Interessenähnlichkeit", "62.5%", "62.5%"]
+                    ]
+                },
+                correctAnswer: "Nein, zum zweiten Date",
             }
         ]
     },
