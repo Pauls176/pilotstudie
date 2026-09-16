@@ -285,6 +285,8 @@ const taskGroups = [
         variants: [
             {
                 variantId: "hotel_review_03",
+                hotelName: "Tree Charme",
+                location: "Rom, Italien",
                 information:
                     "Positiv:\n\n" +
                     "Tolles Appartement im Herzen von Trastevere, mitten in einem charmanten Gässchen! " +
@@ -294,6 +296,8 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_04",
+                hotelName: "Holiday Inn Washington-Central/White House",
+                location: "Washington D.C., USA",
                 information:
                     "Positiv:\n\n" +
                     "Große Zimmer modern eingerichtet. 10-15min zu Fuß beim Weißen Haus. " +
@@ -302,6 +306,8 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_05",
+                hotelName: "Ankara HiltonSA",
+                location: "Ankara, Türkei",
                 information:
                     "Positiv:\n\n" +
                     "Entgegen der Kritik, bin ich auf Mitarbeiter getroffen, die tatsächlich Englisch sprachen " +
@@ -312,6 +318,8 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_06",
+                hotelName: "Hotel Passy Eiffel",
+                location: "Paris, Frankreich",
                 information:
                     "Positiv:\n\n" +
                     "Die Lage des Hotel Passy Eiffel in Paris ist hervorragend, nur wenige Gehminuten vom " +
@@ -323,6 +331,8 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_08",
+                hotelName: "Hotel Transit Loft",
+                location: "Berlin, Deutschland",
                 information:
                     "Positiv:\n\n" +
                     "Hervorragende Lage, in der Nähe vieler Sehenswürdigkeiten. Der Service war ausgezeichnet, " +
@@ -333,6 +343,8 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_01",
+                hotelName: "Park Plaza Beijing Wangfujing",
+                location: "Peking, China",
                 information:
                     "Positiv:\n\n" +
                     "Lage direkt an einer U-Bahn-Station. Perfekt. Waschmaschinen und Trockner vorhanden. " +
@@ -341,6 +353,8 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_02",
+                hotelName: "Hotel Passy Eiffel",
+                location: "Paris, Frankreich",
                 information:
                     "Positiv:\n\n" +
                     "Lage ausgezeichnet, Zimmerausstattung gut, Personal kompetent und freundlich.\n\n" +
@@ -350,6 +364,8 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_07",
+                hotelName: "B Montmartre",
+                location: "Paris, Frankreich",
                 information:
                     "Positiv:\n\n" +
                     "Das Hotel B Montmartre ist ein kleines Juwel in Paris... \n\n" +
@@ -360,12 +376,61 @@ const taskGroups = [
             },
             {
                 variantId: "hotel_review_09",
+                hotelName: "Hyatt Place Washington DC/US Capitol",
+                location: "Washington D.C., USA",
                 information:
                     "Positiv:\n\n" +
                     "Die Lage des Hotels ist ziemlich gut, leicht zu erreichen. Das Frühstück war in Ordnung. \n\n" +
                     "Negativ:\n\n" +
                     "Das Hotelzimmer war sehr alt und nicht gut gepflegt. Es gab viele Probleme mit der Elektrik im " +
                     "Zimmer. Das Badezimmer war schmutzig und es gab Probleme mit der Klimaanlage... ",
+                correctAnswer: "KI-generiert",
+            },
+            {
+                variantId: "hotel_review_10",
+                hotelName: "New Park Hotel",
+                location: "Ankara, Türkei",
+                information:
+                    "Positiv:\n\n" +
+                    "Überaus freundliches Personal und sehr sauberes, geräumiges Zimmer in zentraler Lage. \n\n" +
+                    "Negativ:\n\n" +
+                    "Die Wände sind ein wenig dünn. Man hört das Nachbarzimmer.",
+                correctAnswer: "von einem Menschen",
+            },
+            {
+                variantId: "hotel_review_11",
+                hotelName: "Radisson Blu Ankara",
+                location: "Ankara, Türkei",
+                information:
+                    "Positiv:\n\n" +
+                    "Die Lage war traumhaft, viele Sehenswürdigkeiten waren zu Fuß zu erreichen. Die Mitarbeiterinnen " +
+                    "der F&B Abteilung waren sehr freundlich und hilfsbereit. \n\n" +
+                    "Negativ:\n\n" +
+                    "Das Hotel ist schon etwas in die Jahre gekommen, das beeinträchtigt aber Service und Komfort keinesfalls.",
+                correctAnswer: "von einem Menschen",
+            },
+            {
+                variantId: "hotel_review_12",
+                hotelName: "Hotel Cinnah",
+                location: "Ankara, Türkei",
+                information:
+                    "Positiv:\n\n" +
+                    "Das Personal war sehr zuvorkommend, das Zimmer war sauber und modern eingerichtet " +
+                    "und das Frühstück war reichlich. \n\n" +
+                    "Negativ:\n\n" +
+                    "Die Außenlärmbelastung war manchmal störend, insbesondere während der Stoßzeiten.",
+                correctAnswer: "KI-generiert",
+            },
+            {
+                variantId: "hotel_review_13",
+                hotelName: "Hotel Cinnah",
+                location: "Ankara, Türkei",
+                information:
+                    "Positiv:\n\n" +
+                    "Das Personal ist sehr freundlich und zuvorkommend. Die Zimmer sind sauber und geschmackvoll " +
+                    "eingerichtet. Die Lage ist ausgezeichnet, nahe zu vielen Sehenswürdigkeiten. \n\n" +
+                    "Negativ:\n\n" +
+                    "Leider war das WLAN im Zimmer nicht sehr zuverlässig und es gab nur wenige Parkmöglichkeiten.",
                 correctAnswer: "KI-generiert",
             }
         ]
@@ -862,6 +927,8 @@ function buildSessionTasks(groups) {
                 image: variant.image,
                 table: variant.table,
                 information: variant.information,
+                hotelName: variant.hotelName,
+                location: variant.location,
 
                 correctAnswer: variant.correctAnswer
             });
@@ -1101,6 +1168,22 @@ function renderTask() {
     /* Text */
 
      if (task.information) {
+
+        if (task.hotelName && task.location) {
+
+            const hotelHeading =
+                document.createElement("p");
+
+            hotelHeading.className =
+                "hotel-heading";
+
+            hotelHeading.textContent =
+                `Bewertung von ${task.hotelName} in ${task.location}`;
+
+            taskDescription.appendChild(
+                hotelHeading
+            );
+        }
 
         const informationBox =
             document.createElement("div");
