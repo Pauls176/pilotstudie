@@ -525,7 +525,7 @@ const taskGroups = [
             "u.a. Baujahr, Wohnfläche und Lage. \n\n" +
             "Ihre Aufgabe besteht darin, den gelisteten Kaufpreis der Immobilie einzuschätzen.",
 
-        type: "table",
+        type: "image_table",
 
         prompt:
             "Betrachten Sie die folgenden Informationen. " +
