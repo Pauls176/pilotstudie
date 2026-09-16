@@ -938,13 +938,132 @@ function buildSessionTasks(groups) {
     return sessionTasks;
 }
 
-const tasks = buildSessionTasks(taskGroups);
+/* Fortschritt pro Teilnehmer-ID im localStorage sichern, damit ein
+   einfacher Seiten-Reload (z. B. versehentlich F5) die Studie an der
+   gleichen Stelle fortsetzt, statt Aufgaben doppelt zu stellen.
+   Ein Hard-Refresh (Strg+Shift+R) sowie der Testmodus starten
+   bewusst von vorne. */
+
+const progressStorageKey =
+    (!isTestMode && idFromUrl) ?
+        ("abp_progress_" + idFromUrl) :
+        null;
+
+/* Erkennt einen Hard-Refresh anhand der Navigation-/Resource-Timing-Daten:
+   Bei einem normalen Reload beantwortet der Server das HTML meist aus dem
+   Cache oder per 304 (kleines transferSize). Ein Hard-Refresh erzwingt das
+   Umgehen des Caches, wodurch die Seite vollständig neu übertragen wird. */
+
+function isHardReload() {
+
+    try {
+
+        const [navigationEntry] =
+            performance.getEntriesByType("navigation");
+
+        if (!navigationEntry || navigationEntry.type !== "reload") {
+
+            return false;
+        }
+
+        return (
+            navigationEntry.transferSize > 0 &&
+            navigationEntry.transferSize >= navigationEntry.encodedBodySize
+        );
+
+    } catch (error) {
+
+        return false;
+    }
+}
+
+function loadStoredProgress() {
+
+    if (!progressStorageKey || isHardReload()) {
+
+        return null;
+    }
+
+    try {
+
+        const raw =
+            localStorage.getItem(progressStorageKey);
+
+        return raw ? JSON.parse(raw) : null;
+
+    } catch (error) {
+
+        console.warn(
+            "Gespeicherter Fortschritt konnte nicht gelesen werden:",
+            error
+        );
+
+        return null;
+    }
+}
+
+function saveProgress() {
+
+    if (!progressStorageKey) {
+
+        return;
+    }
+
+    try {
+
+        localStorage.setItem(
+            progressStorageKey,
+            JSON.stringify({
+                tasks: tasks,
+                currentTask: currentTask,
+                awaitingRating: awaitingRating
+            })
+        );
+
+    } catch (error) {
+
+        console.warn(
+            "Fortschritt konnte nicht gespeichert werden:",
+            error
+        );
+    }
+}
 
 /* Experiment-Zustand */
 
+let tasks;
+
 let currentTask = 0;
 
+let awaitingRating = false;
+
 let pendingRatingTask = null;
+
+const storedProgress =
+    loadStoredProgress();
+
+if (
+    storedProgress &&
+    Array.isArray(storedProgress.tasks) &&
+    storedProgress.tasks.length > 0
+) {
+
+    tasks = storedProgress.tasks;
+
+    currentTask = storedProgress.currentTask || 0;
+
+    awaitingRating = Boolean(storedProgress.awaitingRating);
+
+} else {
+
+    tasks = buildSessionTasks(taskGroups);
+
+    currentTask = 0;
+
+    awaitingRating = false;
+
+    saveProgress();
+}
 
 /* Aktuelle Aufgabe anzeigen: ggf. zuerst Gruppen-Einleitung */
 
@@ -1281,6 +1400,10 @@ async function handleAnswer(
 
         if (task.isLastInGroup) {
 
+            awaitingRating = true;
+
+            saveProgress();
+
             showRatingScreen(
                 task
             );
@@ -1555,6 +1678,10 @@ function advanceToNextTask() {
 
     currentTask++;
 
+    awaitingRating = false;
+
+    saveProgress();
+
 
     if (
         currentTask >=
@@ -1717,7 +1844,20 @@ document.getElementById(
 
 if (hasValidSession) {
 
-    goToCurrentTask();
+    if (currentTask >= tasks.length) {
+
+        showCompletion();
+
+    } else if (awaitingRating) {
+
+        showRatingScreen(
+            tasks[currentTask]
+        );
+
+    } else {
+
+        goToCurrentTask();
+    }
 
 } else {
 
