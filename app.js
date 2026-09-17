@@ -99,152 +99,192 @@ const taskGroups = [
         variants: [
             {
                 variantId: "speed_dating_04",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "21", "31"],
                         ["Studium", "Jura", "Betriebswirtschaftslehre"],
                         ["Freizeitaktivitäten", "mehrmals/Woche", "mehrmals/Woche"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "7", "7"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "5", "10"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "7", "10"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "7", "2"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "7", "8"],
-                        ["Interessenähnlichkeit", "73.5%", "73.5%"]
+                        ["Interessenähnlichkeit", "73.5%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "7", "7"],
+                        ["Aufrichtigkeit", "5", "10"],
+                        ["Intelligenz", "7", "10"],
+                        ["Unterhaltsamkeit", "7", "2"],
+                        ["Ambition", "7", "8"]
                     ]
                 },
                 correctAnswer: "Ja, zum zweiten Date",
             },
             {
                 variantId: "speed_dating_02",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "22", "27"],
                         ["Studium", "Kommunikationswissenschaften", "Chemie"],
                         ["Freizeitaktivitäten", "mehrmals/Woche", "einmal/Woche"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "7", "9"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "7", "8"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "7", "7"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "8", "8"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "7", "5"],
-                        ["Interessenähnlichkeit", "57%", "57%"]
+                        ["Interessenähnlichkeit", "57%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "7", "9"],
+                        ["Aufrichtigkeit", "7", "8"],
+                        ["Intelligenz", "7", "7"],
+                        ["Unterhaltsamkeit", "8", "8"],
+                        ["Ambition", "7", "5"]
                     ]
                 },
                 correctAnswer: "Ja, zum zweiten Date",
             },
             {
                 variantId: "speed_dating_06",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "28", "32"],
                         ["Studium", "Internationale Beziehungen/ Betriebswirtschaftslehre", "Psychologie"],
                         ["Freizeitaktivitäten", "zweimal/Woche", "zweimal/Monat"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "5", "7"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "8", "7"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "6", "10"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "7", "—"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "7", "8"],
-                        ["Interessenähnlichkeit", "58%", "58%"]
+                        ["Interessenähnlichkeit", "58%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "5", "7"],
+                        ["Aufrichtigkeit", "8", "7"],
+                        ["Intelligenz", "6", "10"],
+                        ["Unterhaltsamkeit", "7", "—"],
+                        ["Ambition", "7", "8"]
                     ]
                 },
                 correctAnswer: "Nein, kein zweites Date",
             },
             {
                 variantId: "speed_dating_09",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "25", "24"],
                         ["Studium", "Soziale Arbeit", "Biomedizin/ Technik"],
                         ["Freizeitaktivitäten", "einmal/Woche", "einmal/Woche"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "8", "4"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "6", "8"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "7", "7"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "7", "6"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "6", "6"],
-                        ["Interessenähnlichkeit", "59.5%", "59.5%"]
+                        ["Interessenähnlichkeit", "59.5%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "8", "4"],
+                        ["Aufrichtigkeit", "6", "8"],
+                        ["Intelligenz", "7", "7"],
+                        ["Unterhaltsamkeit", "7", "6"],
+                        ["Ambition", "6", "6"]
                     ]
                 },
                 correctAnswer: "Nein, kein zweites Date",
             },
             {
                 variantId: "speed_dating_01",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "25", "28"],
                         ["Studium", "Internationale Beziehungen/ Betriebswirtschaftslehre", "Biomedizin"],
                         ["Freizeitaktivitäten", "zweimal/Woche", "einmal/Woche"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "8", "7"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "8", "10"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "6", "8"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "6", "9"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "6", "—"],
-                        ["Interessenähnlichkeit", "66%", "66%"]
+                        ["Interessenähnlichkeit", "66%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "8", "7"],
+                        ["Aufrichtigkeit", "8", "10"],
+                        ["Intelligenz", "6", "8"],
+                        ["Unterhaltsamkeit", "6", "9"],
+                        ["Ambition", "6", "—"]
                     ]
                 },
                 correctAnswer: "Ja, zum zweiten Date",
             },
             {
                 variantId: "speed_dating_03",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "25", "27"],
                         ["Studium", "Bildung/ Wissenschaft", "Wirtschaft/ Finanzen"],
                         ["Freizeitaktivitäten", "mehrmals/Woche", "zweimal/Woche"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "7", "6"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "7", "10"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "7", "9"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "9", "9"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "—", "4"],
-                        ["Interessenähnlichkeit", "63%", "63%"]
+                        ["Interessenähnlichkeit", "63%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "7", "6"],
+                        ["Aufrichtigkeit", "7", "10"],
+                        ["Intelligenz", "7", "9"],
+                        ["Unterhaltsamkeit", "9", "9"],
+                        ["Ambition", "—", "4"]
                     ]
                 },
                 correctAnswer: "Ja, zum zweiten Date",
             },
             {
                 variantId: "speed_dating_07",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "24", "27"],
                         ["Studium", "Sprache/ Journalismus", "Wirtschaft/ Finanzen"],
                         ["Freizeitaktivitäten", "zweimal/Woche", "zweimal/Woche"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "4", "5"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "2", "8"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "3", "8"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "3", "8"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "1", "8"],
-                        ["Interessenähnlichkeit", "69.5%", "69.5%"]
+                        ["Interessenähnlichkeit", "69.5%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "4", "5"],
+                        ["Aufrichtigkeit", "2", "8"],
+                        ["Intelligenz", "3", "8"],
+                        ["Unterhaltsamkeit", "3", "8"],
+                        ["Ambition", "1", "8"]
                     ]
                 },
                 correctAnswer: "Nein, zum zweiten Date",
             },
             {
                 variantId: "speed_dating_10",
-                table: {
+                table1: {
                     headers: ["Merkmal", "Person A", "Person B"],
                     rows: [
                         ["Geschlecht", "Frau", "Mann"],
                         ["Alter", "21", "25"],
                         ["Studium", "Jura", "Wirtschaft/ Finanzen"],
                         ["Freizeitaktivitäten", "mehrmals/Woche", "mehrmals/Woche"],
-                        ["Vergebene Attraktivitäts-Bewertung (für den/die Partner/in)", "7", "4"],
-                        ["Vergebene Aufrichtigkeits-Bewertung (für den/die Partner/in)", "7", "9"],
-                        ["Vergebene Intelligenz-Bewertung (für den/die Partner/in)", "8", "7"],
-                        ["Vergebene Unterhaltsamkeits-Bewertung (für den/die Partner/in)", "8", "4"],
-                        ["Vergebene Ambitions-Bewertung (für den/die Partner/in)", "7", "6"],
-                        ["Interessenähnlichkeit", "62.5%", "62.5%"]
+                        ["Interessenähnlichkeit", "62.5%"]
+                    ]
+                },
+                table2: {
+                    headers: ["Bewertung", "Person A über Person B", "Person B über Person A"],
+                    rows: [
+                        ["Attraktivität", "7", "4"],
+                        ["Aufrichtigkeit", "7", "9"],
+                        ["Intelligenz", "8", "7"],
+                        ["Unterhaltsamkeit", "8", "4"],
+                        ["Ambition", "7", "6"]
                     ]
                 },
                 correctAnswer: "Nein, zum zweiten Date",
@@ -926,6 +966,8 @@ function buildSessionTasks(groups) {
 
                 image: variant.image,
                 table: variant.table,
+                table1: variant.table1,
+                table2: variant.table2,
                 information: variant.information,
                 hotelName: variant.hotelName,
                 location: variant.location,
@@ -1154,6 +1196,102 @@ function showGroupIntro(task) {
         false;
 }
 
+/* Erzeugt ein <table>-Element aus Kopf- und Datenzeilen.
+   Enthält eine Zeile weniger Zellen als Kopfspalten vorhanden sind
+   (z.B. Interessenähnlichkeit), spannt die letzte Zelle über die
+   verbleibenden Spalten. */
+function buildDataTable(tableData, className) {
+
+    const table =
+        document.createElement("table");
+
+    table.className =
+        className;
+
+
+    // Tabellenkopf
+
+    const thead =
+        document.createElement("thead");
+
+    const headerRow =
+        document.createElement("tr");
+
+    tableData.headers.forEach(
+        header => {
+
+            const th =
+                document.createElement("th");
+
+            th.textContent =
+                header;
+
+            headerRow.appendChild(
+                th
+            );
+        }
+    );
+
+    thead.appendChild(
+        headerRow
+    );
+
+    table.appendChild(
+        thead
+    );
+
+
+    // Tabellenkörper
+
+    const tbody =
+        document.createElement("tbody");
+
+    tableData.rows.forEach(
+        row => {
+
+            const tr =
+                document.createElement("tr");
+
+            row.forEach(
+                (cell, index) => {
+
+                    const td =
+                        document.createElement("td");
+
+                    td.textContent =
+                        cell;
+
+                    const isLastCell =
+                        index === row.length - 1;
+
+                    const missingCells =
+                        tableData.headers.length - row.length;
+
+                    if (isLastCell && missingCells > 0) {
+
+                        td.colSpan =
+                            missingCells + 1;
+                    }
+
+                    tr.appendChild(
+                        td
+                    );
+                }
+            );
+
+            tbody.appendChild(
+                tr
+            );
+        }
+    );
+
+    table.appendChild(
+        tbody
+    );
+
+    return table;
+}
+
 /* Aufgabe laden */
 
 function renderTask() {
@@ -1246,109 +1384,52 @@ function renderTask() {
         );
     }
 
-    /* Tabelle */
+    /* Tabelle(n) */
 
-    if (task.table) {
+    if (task.groupId === "speed_dating") {
 
-        const table =
-            document.createElement("table");
-
-        table.className =
-            task.groupId === "speed_dating"
-                ? "task-table task-table--speed-dating"
-                : "task-table";
-
-
-        // Tabellenkopf
-
-        const thead =
-            document.createElement("thead");
-
-        const headerRow =
-            document.createElement("tr");
-
-        task.table.headers.forEach(
-            header => {
-
-                const th =
-                    document.createElement("th");
-
-                th.textContent =
-                    header;
-
-                headerRow.appendChild(
-                    th
-                );
-            }
-        );
-
-        thead.appendChild(
-            headerRow
-        );
-
-        table.appendChild(
-            thead
-        );
-
-
-        // Tabellenkörper
-
-        const tbody =
-            document.createElement("tbody");
-
-        task.table.rows.forEach(
-            row => {
-
-                const tr =
-                    document.createElement("tr");
-
-                row.forEach(
-                    cell => {
-
-                        const td =
-                            document.createElement("td");
-
-                        td.textContent =
-                            cell;
-
-                        tr.appendChild(
-                            td
-                        );
-                    }
-                );
-
-                tbody.appendChild(
-                    tr
-                );
-            }
-        );
-
-        table.appendChild(
-            tbody
-        );
+        // Tabelle 1: Stammdaten & Interessenähnlichkeit
 
         taskDescription.appendChild(
-            table
+            buildDataTable(
+                task.table1,
+                "task-table task-table--speed-dating"
+            )
         );
 
-        // Hinweis unterhalb der Tabelle (nur Speed-Dating-Aufgaben)
+        // Hinweis zwischen den beiden Tabellen
 
-        if (task.groupId === "speed_dating") {
+        const tableNote =
+            document.createElement("p");
 
-            const tableNote =
-                document.createElement("p");
+        tableNote.className =
+            "table-note";
 
-            tableNote.className =
-                "table-note";
+        tableNote.textContent =
+            "Die folgenden Werte zeigen, wie diese Person ihr Gegenüber eingeschätzt hat " +
+            "(nicht, wie sie selbst von ihrem Gegenüber eingeschätzt wurde).";
 
-            tableNote.textContent =
-                "Die folgenden Werte zeigen, wie diese Person ihr Gegenüber eingeschätzt hat " +
-                "(nicht, wie sie selbst von ihrem Gegenüber eingeschätzt wurde).";
+        taskDescription.appendChild(
+            tableNote
+        );
 
-            taskDescription.appendChild(
-                tableNote
-            );
-        }
+        // Tabelle 2: Bewertungen
+
+        taskDescription.appendChild(
+            buildDataTable(
+                task.table2,
+                "task-table task-table--speed-dating"
+            )
+        );
+
+    } else if (task.table) {
+
+        taskDescription.appendChild(
+            buildDataTable(
+                task.table,
+                "task-table"
+            )
+        );
     }
 
     /* Text */
