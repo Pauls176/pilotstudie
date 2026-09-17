@@ -723,10 +723,10 @@ const taskGroups = [
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "18.03.2026"],
-                        ["Ø Temperatur", "8,0 °C"],
-                        ["Sonnenstunden", "11,1 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "3,4 mm"]
+                        ["Datum", "08.01.2025"],
+                        ["Ø Temperatur", "2,8 °C"],
+                        ["Sonnenstunden", "4,2 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "16,1 mm"]
                     ]
                 },
                 correctAnswer: "Kein Regen",
@@ -736,10 +736,10 @@ const taskGroups = [
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "10.08.2026"],
-                        ["Ø Temperatur", "18,7 °C"],
-                        ["Sonnenstunden", "4,4 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
+                        ["Datum", "05.02.2025"],
+                        ["Ø Temperatur", "0,4 °C"],
+                        ["Sonnenstunden", "0,0 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "8,5 mm"]
                     ]
                 },
                 correctAnswer: "Regen",
@@ -749,36 +749,36 @@ const taskGroups = [
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "29.06.2026"],
-                        ["Ø Temperatur", "21,5 °C"],
-                        ["Sonnenstunden", "7,6 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "20,9 mm"]
+                        ["Datum", "09.04.2025"],
+                        ["Ø Temperatur", "6,1 °C"],
+                        ["Sonnenstunden", "0,5 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
                     ]
                 },
-                correctAnswer: "Regen",
+                correctAnswer: "Kein Regen",
             },
             {
                 variantId: "rain_forecast_04",
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "24.07.2026"],
-                        ["Ø Temperatur", "16,4 °C"],
-                        ["Sonnenstunden", "1,1 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "2,1 mm"]
+                        ["Datum", "13.04.2026"],
+                        ["Ø Temperatur", "12,5 °C"],
+                        ["Sonnenstunden", "2,7 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
                     ]
                 },
-                correctAnswer: "Kein Regen",
+                correctAnswer: "Regen",
             },
             {
                 variantId: "rain_forecast_05",
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "30.07.2026"],
-                        ["Ø Temperatur", "25,4 °C"],
-                        ["Sonnenstunden", "10,2 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "7,2 mm"]
+                        ["Datum", "22.05.2025"],
+                        ["Ø Temperatur", "8,3 °C"],
+                        ["Sonnenstunden", "5,8 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
                     ]
                 },
                 correctAnswer: "Regen",
@@ -788,23 +788,23 @@ const taskGroups = [
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "08.01.2026"],
-                        ["Ø Temperatur", "-1,5 °C"],
-                        ["Sonnenstunden", "0,0 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "2,4 mm"]
+                        ["Datum", "11.06.2025"],
+                        ["Ø Temperatur", "13,8 °C"],
+                        ["Sonnenstunden", "13,6 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "14,2 mm"]
                     ]
                 },
-                correctAnswer: "Regen",
+                correctAnswer: "Kein Regen",
             },
             {
                 variantId: "rain_forecast_07",
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "14.01.2026"],
-                        ["Ø Temperatur", "3,9 °C"],
-                        ["Sonnenstunden", "1,5 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "12,2 mm"]
+                        ["Datum", "03.05.2025"],
+                        ["Ø Temperatur", "10,6 °C"],
+                        ["Sonnenstunden", "7,6 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
                     ]
                 },
                 correctAnswer: "Regen",
@@ -814,49 +814,49 @@ const taskGroups = [
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "20.02.2026"],
-                        ["Ø Temperatur", "-1,6 °C"],
-                        ["Sonnenstunden", "3,6 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "0,8 mm"]
+                        ["Datum", "29.06.2025"],
+                        ["Ø Temperatur", "19,5 °C"],
+                        ["Sonnenstunden", "10,7 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "10,1 mm"]
                     ]
                 },
-                correctAnswer: "Regen",
+                correctAnswer: "Kein Regen",
             },
             {
                 variantId: "rain_forecast_09",
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "25.04.2026"],
-                        ["Ø Temperatur", "8,0 °C"],
-                        ["Sonnenstunden", "1,1 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
+                        ["Datum", "16.07.2025"],
+                        ["Ø Temperatur", "16,8 °C"],
+                        ["Sonnenstunden", "7,2 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "1,6 mm"]
                     ]
                 },
-                correctAnswer: "Kein Regen",
+                correctAnswer: "Regen",
             },
             {
                 variantId: "rain_forecast_10",
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "17.05.2026"],
-                        ["Ø Temperatur", "11,7 °C"],
-                        ["Sonnenstunden", "6,0 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "8,8 mm"]
+                        ["Datum", "12.09.2025"],
+                        ["Ø Temperatur", "14,3 °C"],
+                        ["Sonnenstunden", "7,5 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "2,0 mm"]
                     ]
                 },
-                correctAnswer: "Kein Regen",
+                correctAnswer: "Regen",
             },
             {
                 variantId: "rain_forecast_11",
                 table: {
                     headers: ["", ""],
                     rows: [
-                        ["Datum", "07.08.2026"],
-                        ["Ø Temperatur", "16,1 °C"],
-                        ["Sonnenstunden", "3,2 h"],
-                        ["Niederschlag (der vorigen 3 Tage)", "0,2 mm"]
+                        ["Datum", "27.09.2025"],
+                        ["Ø Temperatur", "14,5 °C"],
+                        ["Sonnenstunden", "1,3 h"],
+                        ["Niederschlag (der vorigen 3 Tage)", "0,0 mm"]
                     ]
                 },
                 correctAnswer: "Kein Regen",
