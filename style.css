@@ -302,6 +302,16 @@ body {
     background: #f0f0f0;
 }
 
+.table-note {
+    max-width: 600px;
+
+    margin: -12px auto 24px;
+
+    font-size: 13px;
+
+    color: #666;
+}
+
 
 /* Informationstext */
 

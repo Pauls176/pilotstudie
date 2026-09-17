@@ -1330,6 +1330,25 @@ function renderTask() {
         taskDescription.appendChild(
             table
         );
+
+        // Hinweis unterhalb der Tabelle (nur Speed-Dating-Aufgaben)
+
+        if (task.groupId === "speed_dating") {
+
+            const tableNote =
+                document.createElement("p");
+
+            tableNote.className =
+                "table-note";
+
+            tableNote.textContent =
+                "Die folgenden Werte zeigen, wie diese Person ihr Gegenüber eingeschätzt hat " +
+                "(nicht, wie sie selbst von ihrem Gegenüber eingeschätzt wurde).";
+
+            taskDescription.appendChild(
+                tableNote
+            );
+        }
     }
 
     /* Text */
