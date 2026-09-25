@@ -1556,6 +1556,11 @@ async function handleAnswer(
             advanceToNextTask();
         }
 
+        window.scrollTo(
+            0,
+            0
+        );
+
     } catch (error) {
 
         console.error(
